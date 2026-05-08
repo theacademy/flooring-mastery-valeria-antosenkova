@@ -1,0 +1,5 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+14,Tina,TX,4.45,Tile,100,3.50,4.15,350.00,415.00,34.04,799.04
+15,Julie,WA,9.25,Laminate,200,1.75,2.10,350.00,420.00,71.23,841.23
+16,Valeria,CA,25.00,Wood,100,5.15,4.75,515.00,475.00,247.50,1237.50
+17,Calvin,KY,6.00,Carpet,100.3,2.25,2.10,225.68,210.63,26.18,462.49
