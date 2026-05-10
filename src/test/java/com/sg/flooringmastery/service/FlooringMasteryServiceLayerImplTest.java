@@ -67,13 +67,16 @@ class FlooringMasteryServiceLayerImplTest {
         Tax tax = new Tax("CA", "California", new BigDecimal("25.00"));
         Product product = new Product("Tile", new BigDecimal("3.50"), new BigDecimal("4.15"));
 
+        // arrange - build input data, create any mock behaviors
         when(taxDao.getTaxByState("CA")).thenReturn(tax);
         when(productDao.getProductByType("Tile")).thenReturn(product);
         when(orderDao.getAllOrders()).thenReturn(new TreeMap<>());
         when(orderDao.addOrder(eq(FUTURE_DATE), any(Order.class))).thenAnswer(i -> i.getArgument(1));
 
+        // act - call the method we test
         Order saved = service.addOrder(FUTURE_DATE, order);
 
+        // assert - check the result is what we expect
         assertNotNull(saved);
         assertEquals(1, saved.getOrderNumber()); // next number after empty store
         assertNotNull(saved.getMaterialCost());

@@ -3,7 +3,6 @@
 
 ## 1. The Main Application Loop
 
-The first thing I figured out was the overall shape of the program. It's a menu-driven console app, so the simplest structure is just: show menu → get choice → do the thing → repeat.
 
 ```
 START application

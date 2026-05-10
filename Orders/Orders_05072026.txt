@@ -1,8 +1,7 @@
 OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
-5,John,WA,9.25,Wood,400,5.15,4.75,2060.00,1900.00,366.30,4326.30
+5,George,TX,4.45,Wood,300,5.15,4.75,1545.00,1425.00,132.17,3102.17
 7,Acme, Inc.,CA,25.00,Wood,500,5.15,4.75,2575.00,2375.00,1237.50,6187.50
 9,John, Johnson, Inc.,TX,4.45,Tile,100,3.50,4.15,350.00,415.00,34.04,799.04
 10,Sam,WA,9.25,Wood,134,5.15,4.75,690.10,636.50,122.71,1449.31
-11,Johnson, Johnson, Inc.,TX,4.45,Wood,100,5.15,4.75,515.00,475.00,44.06,1034.06
 12,3,TX,4.45,Carpet,100,2.25,2.10,225.00,210.00,19.36,454.36
 13,Eric,TX,4.45,Wood,343,5.15,4.75,1766.45,1629.25,151.11,3546.81
