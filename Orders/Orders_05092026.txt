@@ -1,0 +1,2 @@
+OrderNumber,CustomerName,State,TaxRate,ProductType,Area,CostPerSquareFoot,LaborCostPerSquareFoot,MaterialCost,LaborCost,Tax,Total
+18,Vic,TX,4.45,Carpet,100,2.25,2.10,225.00,210.00,19.36,454.36
