@@ -13,6 +13,7 @@ import java.util.*;
  * Each date gets its own file (e.g., Orders_06012013.txt) inside the orders folder.
  * No caching here - every call goes straight to the file so the data is always fresh.
  */
+@SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
 public class OrderDaoFileImpl implements OrderDao {
 
     private static final String DELIMITER = ",";
@@ -29,6 +30,7 @@ public class OrderDaoFileImpl implements OrderDao {
     private static final String EXPORT_HEADER = HEADER + ",OrderDate";
 
     private final String ordersDir;
+
 
 
     public OrderDaoFileImpl(String ordersDir) {

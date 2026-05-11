@@ -89,9 +89,12 @@ public class FlooringMasteryView {
     // customer name input
 
     public String getCustomerNameInput(String currentName) {
-        String prompt = currentName == null
-                ? "Enter customer name: "
-                : "Enter customer name (" + currentName + "): ";
+        String prompt;
+        if (currentName == null) {
+            prompt = "Enter customer name: ";
+        } else {
+            prompt = "Enter customer name (" + currentName + "): ";
+        }
         while (true) {
             String input = io.readString(prompt).trim();
             if (input.isEmpty() && currentName != null) {
@@ -117,9 +120,12 @@ public class FlooringMasteryView {
             io.print(String.format("  %-5s - %-20s  Tax Rate: %.2f%%",
                     tax.getStateAbbreviation(), tax.getStateName(), tax.getTaxRate()));
         }
-        String prompt = currentState == null
-                ? "Enter state abbreviation: "
-                : "Enter state abbreviation (" + currentState + "): ";
+        String prompt;
+        if (currentState == null) {
+            prompt = "Enter state abbreviation: ";
+        } else {
+            prompt = "Enter state abbreviation (" + currentState + "): ";
+        }
         while (true) {
             String input = io.readString(prompt).trim().toUpperCase();
             if (input.isEmpty() && currentState != null) {
@@ -150,9 +156,12 @@ public class FlooringMasteryView {
                     p.getCostPerSquareFoot(),
                     p.getLaborCostPerSquareFoot()));
         }
-        String prompt = currentType == null
-                ? "Enter product type: "
-                : "Enter product type (" + currentType + "): ";
+        String prompt;
+        if (currentType == null) {
+            prompt = "Enter product type: ";
+        } else {
+            prompt = "Enter product type (" + currentType + "): ";
+        }
         while (true) {
             String input = io.readString(prompt).trim();
             if (input.isEmpty() && currentType != null) {
@@ -174,9 +183,12 @@ public class FlooringMasteryView {
     // area input
 
     public BigDecimal getAreaInput(BigDecimal currentArea) {
-        String prompt = currentArea == null
-                ? "Enter area (sq ft, minimum 100): "
-                : "Enter area (sq ft, minimum 100) (" + currentArea + "): ";
+        String prompt;
+        if (currentArea == null) {
+            prompt = "Enter area (sq ft, minimum 100): ";
+        } else {
+            prompt = "Enter area (sq ft, minimum 100) (" + currentArea + "): ";
+        }
         while (true) {
             String input = io.readString(prompt).trim();
             if (input.isEmpty() && currentArea != null) {
